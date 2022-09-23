@@ -46,7 +46,7 @@
       ]
     },
 	"system": ["dnd5e"],
-	"manifest": "https://github.com/NonchalantWombat/BlackstoneObelisk/blob/main/module.json",
+	"manifest": "https://raw.githubusercontent.com/NonchalantWombat/BlackstoneObelisk/main/module.json",
     "download": "https://www.dropbox.com/s/0pr08h6jc5m4pm2/Blackstone.zip?dl=0",
     "id": "blackstone-obelisk-5e",
     "authors": [

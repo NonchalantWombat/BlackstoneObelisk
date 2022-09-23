@@ -1,0 +1,64 @@
+{
+    "name": "blackstone-obelisk-5e",
+    "title": "Blackstone Obelisk (5e)",
+    "author": "NonchalantWombat",
+    "description": "A level 18, 4 player adventure compendium module for D&D 5e",
+    "packs": [
+        {
+            "name": "blackstone-obelisk",
+            "label": "Blackstone Obelisk",
+            "type": "Adventure",
+            "system": "dnd5e",
+            "path": "packs/blackstone-obelisk.db",
+            "entity": "Adventure",
+            "module": "blackstone-obelisk-5e"
+        }
+    ],
+	"relationships": {
+      "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+	],  
+	  "requires": [
+        {
+			"id": "sequencer",
+			"type": "module",
+			"compatibility": {}
+        },
+		{
+			"id": "fxmaster",
+			"type": "module",
+			"compatibility": {}
+        },
+		{
+			"id": "tokenmagic",
+			"type": "module",
+			"compatibility": {}
+        },
+		{
+			"id": "monks-active-tiles",
+			"type": "module",
+			"compatibility": {}
+        }
+      ]
+    },
+	"system": ["dnd5e"],
+	"manifest": "https://www.dropbox.com/s/es8tu42hvcgvbby/module.json?dl=0",
+    "download": "https://www.dropbox.com/s/0pr08h6jc5m4pm2/Blackstone.zip?dl=0",
+    "id": "blackstone-obelisk-5e",
+    "authors": [
+        {
+            "name": "NonchalantWombat"
+        }
+    ],
+    "minimumCoreVersion": "0.10.0",
+    "compatibleCoreVersion": "10",
+    "compatibility": {
+        "minimum": 10,
+        "verified": 10
+    },
+    "version": "1.0.2"
+}

@@ -1,4 +1,4 @@
-# BlackstoneObelisk
+# Blackstone Obelisk (A D&D 5e Level 18, 3-Shot Adventure)
 
 ![](https://github.com/NonchalantWombat/BlackstoneObelisk/blob/main/Library/Artwork/Blackstone_Obelisk_Sillouette.png)
 

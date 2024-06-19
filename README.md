@@ -1,6 +1,6 @@
 # Blackstone Obelisk (A D&D 5e Level 18, 3-Shot Adventure)
 
-![](https://github.com/NonchalantWombat/BlackstoneObelisk/blob/main/Library/Artwork/Blackstone_Obelisk_Sillouette.png)
+![](https://github.com/NonchalantWombat/BlackstoneObelisk/blob/main/Library/Artwork/Blackstone_Obelisk_2x1.webp)
 
 **This homemade, three-session adventure sees 4 players at Level 18 ascending through increasingly difficult and chaotic challenge rooms on their way to the top of an Arch Lich's private sanctum. This is designed to be run in a single adventuring day (no long rests), and with appropriately high level gear and equipment. It also assumes some level of veteran status in your players; while it can be run with new players, effective use of high level abilities and action economy is necessary to survive the tower, so I recommend running this adventure with no more than two people who are new to D&D.**
 

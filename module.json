@@ -1,21 +1,13 @@
 {
-    "name": "blackstone-obelisk-5e",
-    "title": "Blackstone Obelisk (5e)",
-    "author": "NonchalantWombat",
-    "description": "A level 18, 4 player adventure compendium module for D&D 5e",
-    "packs": [
-        {
-            "name": "blackstone-obelisk",
-            "label": "Blackstone Obelisk",
-            "type": "Adventure",
-            "system": "dnd5e",
-            "path": "packs/blackstone-obelisk.db",
-            "entity": "Adventure",
-            "module": "blackstone-obelisk-5e"
-        }
-    ],
-	"relationships": {
-      "systems": [
+  "id": "blackstone-obelisk-5e",
+  "title": "Blackstone Obelisk (5e)",
+  "version": "1.0.12",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
       {
         "id": "dnd5e",
         "type": "system",
@@ -23,42 +15,36 @@
       }
 	],  
 	  "requires": [
-        {
-			"id": "sequencer",
-			"type": "module",
-			"compatibility": {}
-        },
 		{
-			"id": "fxmaster",
-			"type": "module",
-			"compatibility": {}
-        },
-		{
-			"id": "tokenmagic",
-			"type": "module",
-			"compatibility": {}
-        },
-		{
-			"id": "monks-active-tiles",
+			"id": "tile-scroll",
 			"type": "module",
 			"compatibility": {}
         }
       ]
-    },
-	"system": ["dnd5e"],
-	"manifest": "https://raw.githubusercontent.com/NonchalantWombat/Clifftop-Castle/main/module.json",
-    "download": "https://www.dropbox.com/s/2a5prwubcf05ndv/blackstone-obelisk-5e.zip?dl=1",
-    "id": "blackstone-obelisk-5e",
-    "authors": [
-        {
-            "name": "NonchalantWombat"
-        }
-    ],
-    "minimumCoreVersion": "0.10.0",
-    "compatibleCoreVersion": "10",
-    "compatibility": {
-        "minimum": 10,
-        "verified": 10
-    },
-    "version": "1.0.2"
+  },
+  "authors": [
+    {
+      "name": "NonchalantWombat",
+      "url": "https://github.com/NonchalantWombat",
+      "discord": "nonchalantwombat",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "blackstone-obelisk",
+      "label": "Blackstone Obelisk Import",
+      "path": "packs/blackstone-obelisk",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/NonchalantWombat/BlackstoneObelisk",
+  "download": "https://github.com/NonchalantWombat/BlackstoneObelisk/archive/refs/heads/main.zip",
+  "manifest": "https://raw.githubusercontent.com/NonchalantWombat/BlackstoneObelisk/main/module.json"
 }

@@ -1,26 +1,29 @@
 {
   "id": "blackstone-obelisk-5e",
-  "title": "Blackstone Obelisk (5e)",
-  "version": "1.13",
+  "title": "NonchalantWombat: Blackstone Obelisk (5.5e)",
+  "version": "1.v14.1",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
+    "minimum": "14",
+    "verified": "14"
   },
   "relationships": {
     "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "6.0.0",
+                    "verified": "6"
+                }
+            }
+    ],
+    "requires": [
       {
-        "id": "dnd5e",
-        "type": "system",
+        "id": "tile-scroll",
+        "type": "module",
         "compatibility": {}
       }
-	],  
-	  "requires": [
-		{
-			"id": "tile-scroll",
-			"type": "module",
-			"compatibility": {}
-        }
-      ]
+    ]
   },
   "authors": [
     {
@@ -29,6 +32,9 @@
       "discord": "nonchalantwombat",
       "flags": {}
     }
+  ],
+  "esmodules": [
+    "main.mjs"
   ],
   "packs": [
     {
@@ -44,7 +50,26 @@
       "flags": {}
     }
   ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/blackstone-obelisk-5e/Library/Artwork/Blackstone_Obelisk_Banner.webp",
+      "thumbnail": "modules/blackstone-obelisk-5e/Library/Artwork/Blackstone_Obelisk_Banner.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
   "url": "https://github.com/NonchalantWombat/BlackstoneObelisk",
   "download": "https://github.com/NonchalantWombat/BlackstoneObelisk/archive/refs/heads/main.zip",
-  "manifest": "https://raw.githubusercontent.com/NonchalantWombat/BlackstoneObelisk/main/module.json"
+  "manifest": "https://raw.githubusercontent.com/NonchalantWombat/BlackstoneObelisk/main/module.json",
+  "quickstart": {
+    "world": {
+      "background": "modules/blackstone-obelisk-5e/Library/Artwork/Blackstone Obelisk.png",
+      "cover": "modules/blackstone-obelisk-5e/Library/Artwork/Blackstone_Obelisk_Banner.webp"
+    },
+    "adventures": {},
+    "postImport": false
+  },
+  "description": "This homemade, three-session adventure sees 4 players at Level 18 ascending through increasingly difficult and chaotic challenge rooms on their way to the top of an Arch Lich's private sanctum.",
+  "flags": {}
 }

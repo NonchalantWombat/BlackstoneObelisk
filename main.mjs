@@ -4,6 +4,12 @@ const ADVENTURE = {
   get adventureUuid() {
     return `Compendium.${this.packId}.Adventure.${this.adventureId}`;
   },
+
+  description: [
+    "<blockquote><p><em>The Blackstone Obelisk casts a long shadow over your party...</em></p></blockquote>",
+    "<p>This homemade, three-session adventure sees 4 players at Level 18 ascending through increasingly difficult and chaotic challenge rooms on their way to the top of an Arch Lich&rsquo;s private sanctum. This is designed to be run in a single adventuring day (no long rests), and with appropriately high level gear and equipment. It also assumes some level of veteran status in your players; while it can be run with new players, effective use of high level abilities and action economy is necessary to survive the tower, so I recommend running this adventure with no more than two people who are new to D&amp;D.</p>"
+  ].join(""),
+
   importOptions: {
     activateScene: {
       label: "Activate Initial Scene",
@@ -16,6 +22,12 @@ const ADVENTURE = {
       default: true,
       handler: displayJournal,
       documentId: "kNc5a108Q3UEKRNF"
+    },
+    customizeJoin: {
+      label: "Customize World Details",
+      default: true, // Checked by default so it always sets your custom description
+      handler: customizeJoin,
+      background: "modules/blackstone-obelisk-5e/assets/login-screen.webp" // Optional join screen background
     }
   }
 };
@@ -32,6 +44,23 @@ async function activateScene(adventure, option) {
 async function displayJournal(adventure, option) {
   const journal = game.journal.get(option.documentId);
   journal?.sheet.render(true);
+}
+
+async function customizeJoin(adventure, option) {
+  const worldData = {
+    action: "editWorld",
+    id: game.world.id,
+    description: ADVENTURE.description
+  };
+  // Only overwrite the login background if you specified one above
+  if ( option.background ) worldData.background = option.background;
+
+  await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute("setup"), {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(worldData)
+  });
+  game.world.updateSource(worldData);
 }
 
 /* -------------------------------------------- */
